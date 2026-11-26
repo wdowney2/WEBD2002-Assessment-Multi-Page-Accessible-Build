@@ -90,3 +90,9 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+.svg-sprite {
+  position: absolute;
+  left: -50rem;
+  top: -50rem;
+}
