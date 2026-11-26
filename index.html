@@ -15,15 +15,64 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-to-content">Skip to content</a><!--skip link-->
 
+    <header>
+        <div class="inner-container">
+
+            <!-- Logo -->
+            <a href="/" class="logo" aria-label="AdventureYEG, return to home page">
+                <h1>Adventure<span class="logotype-accent">YEG</span></h1>
+            </a>
+
+            <!-- Main navigation starts here -->
+
+            <nav aria-label="Primary" id="main-nav" hidden>
+                <ul class="nav-list">
+
+                    <!-- Paints -->
+                    <li class="nav-item nav-events">
+                        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="mega-events">
+                            <span>Events</span>
+                            <svg class="chevron" width="22" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.546 18.814L11 9.268M11.314 9.268l-9.546 9.546" stroke-width="2.5" stroke-linecap="round" stroke="currentColor" />
+                            </svg>
+                        </button>
+
+                        <div id="mega-events" class="mega-panel" hidden>
+                            <ul>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item nav-outdoors"><a href="#">Outdoors</a></li>
+
+                    <li class="nav-item nav-about"><a href="#">About</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger: mobile only -->
+            <button type="button" class="nav-trigger nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Expand menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+        </div>
+    </header>
+
+    <main id="main-content">
+        placeholder
+    </main>
 
     <footer>
         <div class="footer-container">
             <div class="footer-text">
-                <h2>Adventure<span class="logotype-blue">YEG</span></h2>
+                <h2>Adventure<span class="logotype-accent">YEG</span></h2>
                 <p>Your guide to Edmonton's best events, festivals, and seasonal celebrations — all year round.</p>
             </div>
-            <nav class="footer-links">
+            <nav class="footer-links" aria-label="Footer navigation">
                 <div class="footer-link-stack">
                     <p>Events</p>
                     <ul>
