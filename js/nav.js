@@ -60,4 +60,7 @@
         });
     });
 
+    document.querySelector('#alert-banner-close').addEventListener("click", (event) => {
+        document.querySelector('#alert-banner').remove();
+    });
 })();
