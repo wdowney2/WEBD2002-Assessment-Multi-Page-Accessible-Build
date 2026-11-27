@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="svg-sprite" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="svg-sprite" aria-hidden="true" stroke="currentColor">
         <symbol id="icon-arrow-right" viewBox="0 0 640 640">
             <!--!Font Awesome Pro 7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.-->
             <path d="M569 337C578.4 327.6 578.4 312.4 569 303.1L401 135C391.6 125.6 376.4 125.6 367.1 135C357.8 144.4 357.7 159.6 367.1 168.9L494.1 295.9L88 295.9C74.7 295.9 64 306.6 64 319.9C64 333.2 74.7 343.9 88 343.9L494.1 343.9L367.1 470.9C357.7 480.3 357.7 495.5 367.1 504.8C376.5 514.1 391.7 514.2 401 504.8L569 337z" />
@@ -57,10 +57,19 @@
         </div>
         <div class="inner-container">
 
-            <!-- Logo -->
-            <a href="/" class="logo" aria-label="AdventureYEG, return to home page">
-                <h1>Adventure<span class="logotype-accent">YEG</span></h1>
-            </a>
+            <div class="header-main">
+                <!-- Logo -->
+                <a href="/" class="logo" aria-label="AdventureYEG, return to home page">
+                    <h1>Adventure<span class="logotype-accent">YEG</span></h1>
+                </a>
+
+                <!-- Hamburger: mobile only -->
+                <button type="button" class="nav-trigger nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Expand menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
 
             <!-- Main navigation starts here -->
 
@@ -77,82 +86,82 @@
                         </button>
 
                         <div id="mega-events" class="mega-panel" hidden>
+                            <div class="inner-container">
+                                <div class="mega-column">
 
-                            <div class="mega-column">
+                                    <h2>Browse Events</h2>
 
-                                <h2>Browse Events</h2>
+                                    <div class="mega-subsection">
+                                        <h3>Happening Now</h3>
 
-                                <div class="mega-subsection">
-                                    <h3>Happening Now</h3>
+                                        <a href="../events/index.html" class="mega-link">
+                                            <span class="mega-link-name">Free Events</span>
+                                            No-cost happenings across Edmonton, every week
+                                        </a>
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">This Weekend</span>
+                                            What's on right now across Edmonton
+                                        </a>
 
-                                    <a href="../events/index.html" class="mega-link">
-                                        <span class="mega-link-name">Free Events</span>
-                                        No-cost happenings across Edmonton, every week
-                                    </a>
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">This Weekend</span>
-                                        What's on right now across Edmonton
-                                    </a>
+                                    </div>
 
+                                    <div class="mega-subsection">
+                                        <h3>Upcoming</h3>
+
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">This Month</span>
+                                            Plan ahead with the full monthly calendar
+                                        </a>
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Family Friendly</span>
+                                            Activities for all ages, from toddlers to grandparents
+                                        </a>
+
+                                    </div>
                                 </div>
+                                <div class="mega-column">
 
-                                <div class="mega-subsection">
-                                    <h3>Upcoming</h3>
+                                    <h2>Explore More</h2>
 
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">This Month</span>
-                                        Plan ahead with the full monthly calendar
+                                    <div class="mega-subsection">
+                                        <h3>Outdoor</h3>
+
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Outdoor Adventures</span>
+                                            River valley hikes, parks, and open-air markets
+                                        </a>
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Sports and Fitness</span>
+                                            Runs, tournaments, and active community events
+                                        </a>
+
+                                    </div>
+
+                                    <div class="mega-subsection">
+                                        <h3>Community</h3>
+
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Community Gatherings</span>
+                                            Neighbourhood meet-ups and local celebrations
+                                        </a>
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Arts and Culture</span>
+                                            Gallery openings, performances, and workshops
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="mega-column mega-featured-column">
+
+                                    <h2>Featured</h2>
+
+                                    <a class="mega-featured" href="#">
+                                        <span class="mega-featured-highlight">Free</span>
+                                        <span class="mega-featured-name">Edmonton Public Library Maker Night</span>
+                                        Fridays, 6 - 9 pm · Stanley A. Milner Library
                                     </a>
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Family Friendly</span>
-                                        Activities for all ages, from toddlers to grandparents
-                                    </a>
-
                                 </div>
                             </div>
-                            <div class="mega-column">
-
-                                <h2>Explore More</h2>
-
-                                <div class="mega-subsection">
-                                    <h3>Outdoor</h3>
-
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Outdoor Adventures</span>
-                                        River valley hikes, parks, and open-air markets
-                                    </a>
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Sports and Fitness</span>
-                                        Runs, tournaments, and active community events
-                                    </a>
-
-                                </div>
-
-                                <div class="mega-subsection">
-                                    <h3>Community</h3>
-
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Community Gatherings</span>
-                                        Neighbourhood meet-ups and local celebrations
-                                    </a>
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Arts and Culture</span>
-                                        Gallery openings, performances, and workshops
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="mega-column mega-featured-column">
-
-                                <h2>Featured</h2>
-
-                                <a class="mega-featured" href="#">
-                                    <span class="mega-featured-highlight">Free</span>
-                                    <span class="mega-featured-name">Edmonton Public Library Maker Night</span>
-                                    Fridays, 6 - 9 pm · Stanley A. Milner Library
-                                </a>
-                            </div>
-
                         </div>
                     </li>
 
@@ -166,92 +175,92 @@
                         </button>
 
                         <div id="mega-seasonal" class="mega-panel" hidden>
+                            <div class="inner-container">
+                                <div class="mega-column">
 
-                            <div class="mega-column">
+                                    <h2>Browse Seasons</h2>
 
-                                <h2>Browse Seasons</h2>
+                                    <div class="mega-subsection">
+                                        <h3>Active Now</h3>
 
-                                <div class="mega-subsection">
-                                    <h3>Active Now</h3>
+                                        <a href="#" class="mega-link current-page">
+                                            <span class="mega-link-name">Fall and Halloween</span>
+                                            Pumpkin patches, haunted trails, and harvest markets
+                                        </a>
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Winter Festivities</span>
+                                            Holiday markets, ice skating, and winter light displays
+                                        </a>
 
-                                    <a href="#" class="mega-link current-page">
-                                        <span class="mega-link-name">Fall and Halloween</span>
-                                        Pumpkin patches, haunted trails, and harvest markets
-                                    </a>
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Winter Festivities</span>
-                                        Holiday markets, ice skating, and winter light displays
-                                    </a>
+                                    </div>
 
+                                    <div class="mega-subsection">
+                                        <h3>Coming Up</h3>
+
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Spring Events</span>
+                                            Farmers markets, garden tours, and outdoor openings
+                                        </a>
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Summer Activities</span>
+                                            Festivals, outdoor concerts, and river valley adventures
+                                        </a>
+
+                                    </div>
                                 </div>
+                                <div class="mega-column">
 
-                                <div class="mega-subsection">
-                                    <h3>Coming Up</h3>
+                                    <h2>Fall and Halloween</h2>
 
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Spring Events</span>
-                                        Farmers markets, garden tours, and outdoor openings
+                                    <div class="mega-subsection">
+                                        <h3>Farms and Fields</h3>
+
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Pumpkin Patches</span>
+                                            Pick-your-own farms and family corn mazes near the city
+                                        </a>
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Corn Mazes</span>
+                                            Family fun in the fields just outside the city
+                                        </a>
+
+                                    </div>
+
+                                    <div class="mega-subsection">
+                                        <h3>After Dark</h3>
+
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Haunted Trails</span>
+                                            Edmonton's scariest after-dark experiences for thrill seekers
+                                        </a>
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Ghost Tours</span>
+                                            Guided walks through Edmonton's most haunted locations
+                                        </a>
+
+                                    </div>
+
+                                    <div class="mega-subsection">
+                                        <h3>Shop and Taste</h3>
+
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Harvest Markets</span>
+                                            Local produce, baked goods, and seasonal handmade crafts
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="mega-column mega-featured-column">
+
+                                    <h2>Featured</h2>
+
+                                    <a class="mega-featured" href="#">
+                                        <span class="mega-featured-highlight">Oct 18-31</span>
+                                        <span class="mega-featured-name">Fort Edmonton Haunted Grounds</span>
+                                        Nightly from 7 pm · Fort Edmonton Park
                                     </a>
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Summer Activities</span>
-                                        Festivals, outdoor concerts, and river valley adventures
-                                    </a>
-
                                 </div>
                             </div>
-                            <div class="mega-column">
-
-                                <h2>Fall and Halloween</h2>
-
-                                <div class="mega-subsection">
-                                    <h3>Farms and Fields</h3>
-
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Pumpkin Patches</span>
-                                        Pick-your-own farms and family corn mazes near the city
-                                    </a>
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Corn Mazes</span>
-                                        Family fun in the fields just outside the city
-                                    </a>
-
-                                </div>
-
-                                <div class="mega-subsection">
-                                    <h3>After Dark</h3>
-
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Haunted Trails</span>
-                                        Edmonton's scariest after-dark experiences for thrill seekers
-                                    </a>
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Ghost Tours</span>
-                                        Guided walks through Edmonton's most haunted locations
-                                    </a>
-
-                                </div>
-
-                                <div class="mega-subsection">
-                                    <h3>Shop and Taste</h3>
-
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Harvest Markets</span>
-                                        Local produce, baked goods, and seasonal handmade crafts
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="mega-column mega-featured-column">
-
-                                <h2>Featured</h2>
-
-                                <a class="mega-featured" href="#">
-                                    <span class="mega-featured-highlight">Oct 18-31</span>
-                                    <span class="mega-featured-name">Fort Edmonton Haunted Grounds</span>
-                                    Nightly from 7 pm · Fort Edmonton Park
-                                </a>
-                            </div>
-
                         </div>
                     </li>
 
@@ -265,88 +274,88 @@
                         </button>
 
                         <div id="mega-festivals" class="mega-panel" hidden>
+                            <div class="inner-container">
+                                <div class="mega-column">
 
-                            <div class="mega-column">
+                                    <h2>Browse Festivals</h2>
 
-                                <h2>Browse Festivals</h2>
+                                    <div class="mega-subsection">
+                                        <h3>Popular</h3>
 
-                                <div class="mega-subsection">
-                                    <h3>Popular</h3>
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Music and Arts</span>
+                                            Live concerts, gallery openings, and street performance festivals
+                                        </a>
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Food and Drink</span>
+                                            Food truck showdowns, craft beer tastings, and culinary tours
+                                        </a>
 
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Music and Arts</span>
-                                        Live concerts, gallery openings, and street performance festivals
-                                    </a>
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Food and Drink</span>
-                                        Food truck showdowns, craft beer tastings, and culinary tours
-                                    </a>
+                                    </div>
 
+                                    <div class="mega-subsection">
+                                        <h3>More</h3>
+
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Cultural</span>
+                                            Heritage festivals celebrating Edmonton's diverse communities
+                                        </a>
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Film and Comedy</span>
+                                            Indie film showcases, comedy nights, and open-mic events
+                                        </a>
+
+                                    </div>
                                 </div>
+                                <div class="mega-column">
 
-                                <div class="mega-subsection">
-                                    <h3>More</h3>
+                                    <h2>Food &amp; Drink</h2>
 
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Cultural</span>
-                                        Heritage festivals celebrating Edmonton's diverse communities
+                                    <div class="mega-subsection">
+                                        <h3>Food</h3>
+
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Taste of Edmonton</span>
+                                            July 18 - 27 · Free entry · Churchill Square
+                                        </a>
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">YEG Food Truck Frenzy</span>
+                                            August 10 · 11 am - 8 pm · MacEwan University
+                                        </a>
+
+                                    </div>
+
+                                    <div class="mega-subsection">
+                                        <h3>Drink</h3>
+
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">YEG Craft Beer Festival</span>
+                                            August 24 · 12 pm - 9 pm · Rogers Place Plaza
+                                        </a>
+
+                                    </div>
+
+                                    <div class="mega-subsection">
+                                        <h3>Markets</h3>
+
+                                        <a href="#" class="mega-link">
+                                            <span class="mega-link-name">Whyte Ave Night Market</span>
+                                            Every Friday · 5 - 10 pm · Old Strathcona
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="mega-column mega-featured-column">
+
+                                    <h2>Featured</h2>
+
+                                    <a class="mega-featured" href="#">
+                                        <span class="mega-featured-highlight">Free - Aug 3 - 5</span>
+                                        <span class="mega-featured-name">Edmonton Heritage Days</span>
+                                        Heritage Amphitheatre · William Hawrelak Park
                                     </a>
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Film and Comedy</span>
-                                        Indie film showcases, comedy nights, and open-mic events
-                                    </a>
-
                                 </div>
                             </div>
-                            <div class="mega-column">
-
-                                <h2>Food &amp; Drink</h2>
-
-                                <div class="mega-subsection">
-                                    <h3>Food</h3>
-
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Taste of Edmonton</span>
-                                        July 18 - 27 · Free entry · Churchill Square
-                                    </a>
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">YEG Food Truck Frenzy</span>
-                                        August 10 · 11 am - 8 pm · MacEwan University
-                                    </a>
-
-                                </div>
-
-                                <div class="mega-subsection">
-                                    <h3>Drink</h3>
-
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">YEG Craft Beer Festival</span>
-                                        August 24 · 12 pm - 9 pm · Rogers Place Plaza
-                                    </a>
-
-                                </div>
-
-                                <div class="mega-subsection">
-                                    <h3>Markets</h3>
-
-                                    <a href="#" class="mega-link">
-                                        <span class="mega-link-name">Whyte Ave Night Market</span>
-                                        Every Friday · 5 - 10 pm · Old Strathcona
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="mega-column mega-featured-column">
-
-                                <h2>Featured</h2>
-
-                                <a class="mega-featured" href="#">
-                                    <span class="mega-featured-highlight">Free - Aug 3 - 5</span>
-                                    <span class="mega-featured-name">Edmonton Heritage Days</span>
-                                    Heritage Amphitheatre · William Hawrelak Park
-                                </a>
-                            </div>
-
                         </div>
                     </li>
 
@@ -356,18 +365,11 @@
                 </ul>
             </nav>
 
-            <!-- Hamburger: mobile only -->
-            <button type="button" class="nav-trigger nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Expand menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-
         </div>
     </header>
 
     <main id="main-content">
-        <nav aria-label="Breacrumbs" class="breacrumbs">
+        <nav aria-label="Breadcrumbs" class="breadcrumbs">
             <ol>
                 <li><a href="/">Home</a></li>
                 <li><a href="#">Seasonal</a></li>
