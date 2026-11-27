@@ -27,7 +27,7 @@
     --festivals-orange-fg: light-dark(#B03E0E, #F06C3C);
 
     --featured-yellow-surface: light-dark(#FEF4DC, #241800);
-    --featured-yellow-fg: light-dark(#7C5A00, #241800);
+    --featured-yellow-fg: light-dark(#7C5A00, #f0b430);
 
     --misc-purple-surface: light-dark(#EEE4F8, #1A0830);
     --misc-purple-fg: light-dark(#5B2E9C, #A86CE4);
@@ -68,12 +68,18 @@ img {
     max-width: 100%;
     height: 157px;
     object-fit: cover;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
 }
 
 .inner-container {
     width: 100%;
     max-width: min(83rem, 87.5vw);
     margin: auto;
+}
+
+section .inner-container {
+    padding: 3rem 0;
 }
 
 .alert-banner {
@@ -199,6 +205,11 @@ nav ul {
     padding: 0.9375rem 0.9375rem 0.75rem 1.25rem;
 }
 
+.nav-item>button:focus,
+.nav-item>a:focus {
+    outline: 2px solid var(--events-accent-fg);
+}
+
 .nav-list .nav-trigger[aria-expanded="true"] {
     background-color: var(--weird-translucent-border);
     border-bottom: 1px solid var(--weird-translucent-border);
@@ -261,6 +272,10 @@ nav ul {
     margin-top: .75rem;
 }
 
+.mega-link:focus {
+    outline: 2px solid var(--events-accent-fg);
+}
+
 .current-page {
     background-color: var(--events-accent-surface);
     padding: 0.625rem 0.9375rem 0.5rem 0.5rem;
@@ -316,6 +331,252 @@ nav ul {
     --events-accent-fg: var(--festivals-orange-fg);
 }
 
+.breadcrumbs {
+    background-color: var(--nav-background);
+}
+
+.breadcrumbs ol {
+    display: flex;
+    list-style: none;
+    width: fit-content;
+    padding: .5rem 0;
+}
+
+.breadcrumbs li {
+    flex: 1;
+    white-space: nowrap;
+}
+
+.breadcrumbs li:after {
+    content: "/";
+    margin: 0 .5rem;
+}
+
+.breadcrumbs li:last-of-type::after {
+    content: none;
+}
+
+.breadcrumbs a {
+    color: var(--events-accent-fg);
+}
+
+.hero {
+    background-color: var(--nav-background);
+}
+
+.hero p.hero-category {
+    color: var(--events-accent-fg);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.0625rem;
+    margin-bottom: .75rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.hero-container>* {
+    max-width: 43.75rem;
+}
+
+.homepage-hero h2 {
+    font-size: 2.5rem;
+}
+
+.homepage-hero .hero-container>* {
+    max-width: 37.5rem;
+}
+
+h2.fall-and-halloween-unique-heading {
+    font-size: 1.375rem;
+}
+
+.events-container {
+    padding: 1.5rem 0;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.event {
+    flex: 1;
+    width: 100%;
+    min-width: max(30%, 14rem);
+    background-color: var(--surface);
+    border-radius: .5rem;
+}
+
+.event:focus {
+    outline: 2px solid var(--events-teal-fg);
+    /* You'll notice the event cards aren't in the tab order, which is because I ran out of time before I noticed they weren't interactable. */
+}
+
+.event-title {
+    margin: 1.25rem 1.25rem 1rem 1.25rem
+}
+
+.event-date {
+    color: var(--text-muted);
+    font-size: .875rem;
+}
+
+.event-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.event-bottom-info {
+    margin: 1rem 1.25rem 1.25rem 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-bottom-info p {
+    color: var(--text-muted);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.event-bottom-info p.event-cost {
+    font-weight: 500;
+    padding: .19rem .5rem;
+    color: var(--events-teal-fg);
+    background-color: var(--events-teal-surface);
+    border-radius: 1.25rem;
+    width: fit-content;
+}
+
+.event-category {
+    font-weight: 500;
+    padding: .19rem .5rem;
+    border-radius: .25rem;
+    width: fit-content;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.category-events {
+    color: var(--events-teal-fg);
+    background-color: var(--events-teal-surface);
+}
+
+.category-seasonal {
+    color: var(--seasonal-green-fg);
+    background-color: var(--seasonal-green-surface);
+}
+
+.category-festivals {
+    color: var(--festivals-orange-fg);
+    background-color: var(--festivals-orange-surface);
+}
+
+.category-music-arts {
+    color: var(--misc-purple-fg);
+    background-color: var(--misc-purple-surface);
+}
+
+.category-featured {
+    color: var(--featured-yellow-fg);
+    background-color: var(--featured-yellow-surface);
+}
+
+.adventures-section {
+    border-bottom: var(--text-muted);
+}
+
+.adventure {
+    border: 1px solid var(--events-accent-fg);
+    border-top-width: 4px;
+    padding: 1.5rem;
+}
+
+.adventure:nth-of-type(2) {
+    --events-accent-surface: var(--seasonal-green-surface);
+    --events-accent-fg: var(--seasonal-green-fg);
+}
+
+.adventure:nth-of-type(3) {
+    --events-accent-surface: var(--festivals-orange-surface);
+    --events-accent-fg: var(--festivals-orange-fg);
+}
+
+.adventure-icon {
+    padding: .75rem;
+    color: var(--events-accent-fg);
+    background-color: var(--events-accent-surface);
+    margin-bottom: 1rem;
+    width: fit-content;
+    height: 48px;
+    border-radius: .75rem;
+}
+
+.adventure h3 {
+    font-size: 1.5rem;
+    margin-bottom: .75rem;
+}
+
+.adventure p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.adventure a {
+    color: var(--events-accent-fg);
+    font-size: 0.9375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.button-primary,
+.button-ghost,
+.button-solid {
+    padding: 0.90625rem 1.625rem;
+    border-radius: .375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: .5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.button-primary {
+    background-color: var(--events-teal-fg);
+    color: var(--text-inverted);
+}
+
+.button-ghost {
+    border: 2px solid var(--weird-translucent-border);
+
+}
+
+.button-primary:focus,
+.button-ghost:focus,
+.button-solid:focus {
+    outline: 2px solid var(--events-teal-fg);
+}
 
 
 
@@ -327,34 +588,73 @@ nav ul {
 
 
 
+footer {
+    padding: 3rem 0;
+    background-color: var(--text-inverted);
+}
 
+.footer-container,
+.footer-legal {
+    max-width: min(83rem, 87.5vw);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.footer-text {
+    max-width: 18.4375rem;
+}
 
+.footer-text h2 {
+    font-size: 1.3125rem;
+    margin-bottom: 1.5rem;
+}
 
+.footer-text p {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
 
+.footer-legal {
+    font-size: .875rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--weird-translucent-border);
+    padding: 1.5rem 0;
+    margin-top: 1.5rem;
+    gap: 1.25rem;
+}
 
+.footer-links {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
 
+.footer-link-stack {
+    min-width: 10rem;
+}
 
+.footer-link-stack p {
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
 
+.footer-link-stack ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+a:focus {
+    outline: 2px solid var(--events-accent-fg);
+}
 
 @media screen and (min-width: 89rem) {
     img {
@@ -423,7 +723,6 @@ nav ul {
         align-items: stretch;
         justify-content: left;
         gap: 2.5rem;
-        min-height: 10rem;
     }
 
     .mega-column {
@@ -446,10 +745,6 @@ nav ul {
 
     .current-page {
         padding: 0.5rem 0.75rem 0.875rem 0.75rem;
-    }
-
-    .breadcrumbs ol {
-        display: flex;
     }
 }
 
