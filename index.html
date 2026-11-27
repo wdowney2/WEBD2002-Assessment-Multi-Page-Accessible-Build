@@ -8,7 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -48,7 +48,7 @@
     </svg>
     -->
 
-    <a href="#main-content" class="skip-to-content">Skip to content</a><!--skip link-->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a><!--skip link-->
 
     <header>
         <div class="alert-banner" id="alert-banner">
@@ -61,6 +61,13 @@
             <a href="/" class="logo" aria-label="AdventureYEG, return to home page">
                 <h1>Adventure<span class="logotype-accent">YEG</span></h1>
             </a>
+
+            <!-- Hamburger: mobile only -->
+            <button type="button" class="nav-trigger nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Expand menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
 
             <!-- Main navigation starts here -->
 
@@ -356,13 +363,6 @@
                 </ul>
             </nav>
 
-            <!-- Hamburger: mobile only -->
-            <button type="button" class="nav-trigger nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Expand menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-
         </div>
     </header>
 
@@ -377,7 +377,7 @@
                         <svg class="icon" width="24" height="24">
                             <use href="#icon-arrow-right"></use>
                         </svg></a>
-                    <a class="button-secondary">Free This Weekend</a>
+                    <a class="button-ghost">Free This Weekend</a>
                 </div>
             </div>
         </section>
@@ -447,7 +447,7 @@
                                     <use href="#icon-location-dot"></use>
                                 </svg>
                                 Heritage Amphitheatre</p>
-                            <p class="event-cost">Free</p>
+                            <p class="event-cost cost-free">Free</p>
                         </div>
                     </div>
                     <div class="event">
@@ -462,7 +462,7 @@
                                     <use href="#icon-location-dot"></use>
                                 </svg>
                                 Fort Edmonton Park · 7 pm</p>
-                            <p class="event-cost">Ticketed</p>
+                            <p class="event-cost cost-ticketed">Ticketed</p>
                         </div>
                     </div>
                     <div class="event">
@@ -477,7 +477,7 @@
                                     <use href="#icon-location-dot"></use>
                                 </svg>
                                 Whyte Avenue</p>
-                            <p class="event-cost">Free</p>
+                            <p class="event-cost cost-free">Free</p>
                         </div>
                     </div>
                     <div class="event">
@@ -492,7 +492,7 @@
                                     <use href="#icon-location-dot"></use>
                                 </svg>
                                 Old Strathcona</p>
-                            <p class="event-cost">Free</p>
+                            <p class="event-cost cost-free">Free</p>
                         </div>
                     </div>
                     <div class="event">
@@ -507,7 +507,7 @@
                                     <use href="#icon-location-dot"></use>
                                 </svg>
                                 Rogers Place Plaza · 12 pm - 9 pm</p>
-                            <p class="event-cost">Ticketed</p>
+                            <p class="event-cost cost-ticketed">Ticketed</p>
                         </div>
                     </div>
                     <div class="event">
@@ -522,7 +522,7 @@
                                     <use href="#icon-location-dot"></use>
                                 </svg>
                                 River Valley Trails</p>
-                            <p class="event-cost">Free</p>
+                            <p class="event-cost cost-free">Free</p>
                         </div>
                     </div>
                 </div>
@@ -541,26 +541,26 @@
                             <p class="free-name"><a href="#">Hawrelak Park Summer Concert Series</a></p>
                             <p class="free-description">Sundays at 7 pm · Hawrelak Park Amphitheatre</p>
                         </div>
-                        <p class="event-cost">Free</p>
+                        <p class="event-cost cost-free">Free</p>
                     </li>
                     <li class="free-event">
                         <div class="free-title">
                             <p class="free-name"><a href="#">Whyte Ave Night Market</a></p>
                             <p class="free-description">Every Friday, 5 - 10 pm · Whyte Avenue, Old Strathcona</p>
                         </div>
-                        <p class="event-cost">Free</p>
+                        <p class="event-cost cost-free">Free</p>
                     </li>
                     <li class="free-event">
                         <div class="free-title">
                             <p class="free-name"><a href="#">Edmonton Public Library Maker Night</a></p>
                             <p class="free-description">Fridays, 6 - 9 pm · Stanley A. Milner Library</p>
                         </div>
-                        <p class="event-cost">Free</p>
+                        <p class="event-cost cost-free">Free</p>
                     </li>
                 </ul>
 
                 <div class="hero-buttons">
-                    <a href="events/index.html" class="button-primary">See All Free Events
+                    <a href="events/index.html" class="button-solid">See All Free Events
                         <svg class="icon" width="24" height="24">
                             <use href="#icon-arrow-right"></use>
                         </svg></a>
